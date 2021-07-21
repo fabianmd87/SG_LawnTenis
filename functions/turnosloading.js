@@ -12,10 +12,10 @@ class Metodo{
     const elemento=document.createElement('div');
     elemento.innerHTML=`
       <div class="card text-center mt-5">
-        <div class="card-body d-Flex justify-content-around">
-          <strong>Turno: $(turnos.turno)</strong>
-          <strong>Cancha: $(turnos.cancha)</strong>
-          <strong>Fecha: $(turnos.fecha)</strong>
+        <div class="card-body d-flex justify-content-around">
+          <strong>Turno: ${turnos.turno}</strong>
+          <strong>Cancha: ${turnos.cancha}</strong>
+          <strong>Fecha: ${turnos.fecha}</strong>
         </div>
       </div>  
     `;
