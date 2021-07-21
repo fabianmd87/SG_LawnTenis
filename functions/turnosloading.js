@@ -13,8 +13,23 @@ class Metodo{
 document.getElementById('formularioTurno').addEventListener('submit', function(e){
   //Tratar de tomar los valores de los input del formularia
   const turno = document.getElementById('turno').value;
+  const cancha= document.querySelector('#cancha').value;
+  const fecha=document.getElementById('date').value;
+
+
+  const turno= new Turno(turno,cancha,fecha);
+
+
+
   e.preventDefault();
 })
+
+
+
+
+
+
+
 const cargaTurnos =(usuarioActual) => {
     while (true) {
         let turnoElegido = prompt("Ingresa el turno a comprar:");
