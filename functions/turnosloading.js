@@ -7,7 +7,23 @@ class Turno{
 }
 
 class Metodo{
-
+  agregarTurno(turnos){
+    const listaTurno= document.getElementById('listaTurno');
+    const elemento=document.createElement('div');
+    elemento.innerHTML=`
+      <div class="card text-center mt-5">
+        <div class="card-body d-Flex justify-content-around">
+          <strong>Turno: $(turnos.turno)</strong>
+          <strong>Cancha: $(turnos.cancha)</strong>
+          <strong>Fecha: $(turnos.fecha)</strong>
+        </div>
+      </div>  
+    `;
+    listaTurno.appendChild(elemento); //insertar el elemento en una lista con los turnos
+  }
+  resetearFormulario(){
+    document.getElementById('formularioTurno').reset();
+  }
 }
 
 document.getElementById('formularioTurno').addEventListener('submit', function(e){
@@ -17,10 +33,13 @@ document.getElementById('formularioTurno').addEventListener('submit', function(e
   const fecha=document.getElementById('date').value;
 
 
-  const turno= new Turno(turno,cancha,fecha);
+  const turnos= new Turno(turno,cancha,fecha);
 
+  const usarMetodo=  new Metodo;
 
+  usarMetodo.agregarTurno(turnos);
 
+  usarMetodo.resetearFormulario();
   e.preventDefault();
 })
 
@@ -30,19 +49,19 @@ document.getElementById('formularioTurno').addEventListener('submit', function(e
 
 
 
-const cargaTurnos =(usuarioActual) => {
-    while (true) {
-        let turnoElegido = prompt("Ingresa el turno a comprar:");
+//const cargaTurnos =(usuarioActual) => {
+//    while (true) {
+//        let turnoElegido = prompt("Ingresa el turno a comprar:");
+//
+//        //Ya no desea comprar mas turnos entonces detenemos la ejecucion
+//        if (accionElegida == "") break;
+//
+//        //Usamos la funcion Find de array
+//        let turnoEncontrado = turnosDisponible.find(
+//          (a) => t.nombre == turnoElegido
+//        );
 
-        //Ya no desea comprar mas turnos entonces detenemos la ejecucion
-        if (accionElegida == "") break;
+//        usuarioActual.turnos.push(turnoEncontrado);
+//      }
 
-        //Usamos la funcion Find de array
-        let turnoEncontrado = turnosDisponible.find(
-          (a) => t.nombre == turnoElegido
-        );
-
-        usuarioActual.turnos.push(turnoEncontrado);
-      }
-
-}
+//}
