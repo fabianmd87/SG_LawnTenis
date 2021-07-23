@@ -22,8 +22,6 @@ function Persona(pNombre, pApellido, pDni, pPeso, pAltura) {
   this.mostrar = function () {
     alert(` ${persona.nombre} ${persona.apellido}`);
   }
-
-
 }
 
 

@@ -19,6 +19,7 @@ class Metodo{
         </div>
       </div>  
     `;
+    console.log();
     listaTurno.appendChild(elemento); //insertar el elemento en una lista con los turnos
   }
   resetearFormulario(){
@@ -26,7 +27,7 @@ class Metodo{
   }
 }
 
-document.getElementById('formularioTurno').addEventListener('submit', function(e){
+/*document.getElementById('formularioTurno').addEventListener('submit', function(e){
   //Tratar de tomar los valores de los input del formularia
   const turno = document.getElementById('turno').value;
   const cancha= document.querySelector('#cancha').value;
@@ -41,7 +42,7 @@ document.getElementById('formularioTurno').addEventListener('submit', function(e
 
   usarMetodo.resetearFormulario();
   e.preventDefault();
-})
+})*/
 
 
 
