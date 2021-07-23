@@ -1,6 +1,6 @@
 
 //Muestra en un alert el turno cargado //
-$(document).ready(() => {
+/*$(document).ready(() => {
     
     alert($("listaTuro").attr());
 });
@@ -21,4 +21,4 @@ const turno = document.getElementById('turno').value;
 
   usarMetodo.resetearFormulario();
   e.preventDefault()
-});
+});*/

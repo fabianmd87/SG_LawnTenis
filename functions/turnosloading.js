@@ -27,22 +27,29 @@ class Metodo{
   }
 }
 
-/*document.getElementById('formularioTurno').addEventListener('submit', function(e){
-  //Tratar de tomar los valores de los input del formularia
-  const turno = document.getElementById('turno').value;
-  const cancha= document.querySelector('#cancha').value;
-  const fecha=document.getElementById('date').value;
+var archivo = document.getElementById('formularioTurno')
 
+if (archivo) {
+  
+  archivo.addEventListener('submit', function(e){
+    //Tratar de tomar los valores de los input del formularia
+    const turno = document.getElementById('turno').value;
+    const cancha= document.querySelector('#cancha').value;
+    const fecha=document.getElementById('date').value;
+    
+    console.log(turno)
+    const turnos= new Turno(turno,cancha,fecha);
+  
+    const usarMetodo=  new Metodo;
+  
+    usarMetodo.agregarTurno(turnos);
+  
+    usarMetodo.resetearFormulario();
+    e.preventDefault();
+  });
+}
+  
 
-  const turnos= new Turno(turno,cancha,fecha);
-
-  const usarMetodo=  new Metodo;
-
-  usarMetodo.agregarTurno(turnos);
-
-  usarMetodo.resetearFormulario();
-  e.preventDefault();
-})*/
 
 
 
