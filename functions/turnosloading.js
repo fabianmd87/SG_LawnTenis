@@ -19,9 +19,10 @@ class Metodo{
         </div>
       </div>  
     `;
-    console.log();
+    console.log(turno.turno);
     listaTurno.appendChild(elemento); //insertar el elemento en una lista con los turnos
   }
+  
   resetearFormulario(){
     document.getElementById('formularioTurno').reset();
   }

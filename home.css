@@ -8,3 +8,6 @@ div.header {
 .page {
     background-color: rgb(247, 242, 242);
 }
+.center-v {
+    align-items: center;
+}
