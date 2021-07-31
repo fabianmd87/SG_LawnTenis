@@ -1,27 +1,3 @@
-// var usuarioBD = "admin";
-// var passBD = 1234;
-
-// const ingresar = () => {
-//   let usuario = document.getElementById("usuario").value;
-//   let pass = document.getElementById("pass").value;
-//   let mensajeValidacion = document.querySelector("#mensaje-validacion");
-
-//   if (usuario == usuarioBD && pass == passBD) {
-//     mensajeValidacion.className = "text-success";
-//     mensajeValidacion.innerHTML = `Bienvenido ${usuario}`;
-
-//     setTimeout(() => {
-//       window.location = "./home.html";
-//     }, 2000);
-//   } else {
-//     mensajeValidacion.className = "text-danger";
-//     mensajeValidacion.innerHTML = "Usuario o contraseña incorrecta";
-//     setTimeout(() => {
-//       window.location = "./login.html";
-//     }, 1000);
-//   }
-// };
-
 $("#btnLogin").click((e) => {
   $.getJSON("./json/usuarios.json", function (data) {
     let usuario = document.getElementById("usuario").value;
@@ -39,6 +15,11 @@ $("#btnLogin").click((e) => {
         }, 2000);
       }
     });
+    mensajeValidacion.className = "text-danger";
+    mensajeValidacion.innerHTML = "Usuario o contraseña incorrecta";
+    setTimeout(() => {
+      window.location = "./login.html";
+    }, 3000);
   });
 });
 
