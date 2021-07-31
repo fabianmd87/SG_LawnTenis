@@ -1,106 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-        crossorigin="anonymous" />
-        <script type="text/css" rel="stylesheet" src="./home.css"></script>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Club</title>
-        <link rel="stylesheet" href="./home.css">
-</head>
-<body>
-    <form id="Form1" runat="server">
-        <div class="page">
-            <div class="header">
-                <div class="title">
-                    <h1>
-                        LAWN TENIS CLUB DEAN FUNES
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div>
-            <nav class="navbar navbar-light" style="background-color: #68b5d3;"></nav>
-          <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./home.html">REGRESAR</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          </nav>
-        </div><br><br>
-      </form>
-        <!-- boton para guardar los turnos-->
-    <!--<div class="col-md-8">
-    //        <div>
-    //          <button class="btn btn-outline-success " id="bt3"  onclick="cargarTurno();">CARGA DE T
-    //            URNOS</button>
-    //      </div><br>-->
-          <!--creamos card para el calendario -->
-          <div class row pt-5 id="app">
-            <div class="col-md-4">
-              <div class="card mt-5">
-                <div class="card-header">
-                  <h4>Turnos</h4>
-                </div>
-                <form id="formularioTurno" class="card-body">
-                  <div class="form-group mt-3">
-                    <input
-                      type="text"
-                      id="turno"
-                      placeholder="Ingrese Turno a reservar"
-                      class="form-control mt-3"
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <select
-                      class="form-select"
-                      multiple
-                      aria-label="multiple select example"
-                      id="cancha"
-                    >
-                      <option selected>Eliga la cancha</option>
-                      <option value="cancha1">Cancha1</option>
-                      <option value="cancha2">Cancha2</option>
-                      <option value="cancha3">Cancha3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="date"
-                      id="date"
-                      placeholder="Fecha"
-                      class="form-control mt-3"
-                    />
-                  </div>
-                  <div class="d-grid gap-2 mt-3">
-                    <input id="bt1" type="submit" value="Guardar" class="btn btn-primary" />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="center-v" id="listaTurno">
-          </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./functions/turnosloading.js"></script>
-    <!--<script src="./functions/functions.js"></script>-->
-    <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <script type="text/css" rel="stylesheet" src="./home.css"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <form id="Form1" runat="server">
+    <div class="page">
+      <div class="header">
+        <div class="title">
+          <h1>
+            LAWN TENIS CLUB DEAN FUNES
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">REGRESAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div><br><br>
+  </form>
+
+  <div class="row pt-5" id="app">
+    <div class="col-md-4">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h4>Turnos</h4>
+        </div>
+        <form id="formularioTurno" class="card-body">
+          <div class="form-group mt-3">
+            <input type="text" id="nombreTurno" placeholder="Ingrese Nombre Turno a reservar"
+              class="form-control mt-3" />
+          </div>
+          <div class="form-group mt-3">
+            <select class="form-select" multiple aria-label="multiple select example" id="cancha">
+              <option selected>Eliga la cancha</option>
+              <option value="cancha1">Cancha1</option>
+              <option value="cancha2">Cancha2</option>
+              <option value="cancha3">Cancha3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" id="date" placeholder="Fecha" class="form-control mt-3" />
+          </div>
+          <div class="d-grid gap-2 mt-3">
+            <input id="btnGuardar" value="Guardar" class="btn btn-primary" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-8">
+
+      <!-- Tabla donde se ingresan los datos de la card-->
+      <table class="table table-light table-striped" id="tablaTurnos">
+        <thead>
+          <tr>
+            <th scope="col">Nombre Turno</th>
+            <th scope="col">Cancha</th>
+            <th scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="tablaTurnos-body">
+        </tbody>
+      </table>
+      <!--div class="center-v" id="listaTurno">
+      </div-->
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/turnosLoading.js"></script>
+  <!--<script src="./functions/functions.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

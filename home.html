@@ -8,69 +8,83 @@
   <!--Crear el link CSS para que tome las estilos-->
 
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Club</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <title>Club</title>
 </head>
 
 <body>
 
   <form id="Form1" runat="server">
 
-    <div class="header">
+    <header>
       <div class="title">
-        <h1>
+        <h1><br>
           LAWN TENIS CLUB DEAN FUNES
-        </h1>
+        </h1><br>
       </div>
 
-      <div container>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./login.html">LOGIN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">HISTORIA</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    DEPORTES
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./padel.html">PADEL</a></li>
-                    <li><a class="dropdown-item" href="#">TENIS</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">BASQUET</a></li>
-                  </ul>
-                </li>
-
-              </ul>
-              <div class="col-3">
-                <input class="form-control me-2" type="buscar" placeholder="En la web" aria-label="Search">
-                <button class="btn btn-warning" type="submit">BUSCAR</button>
-              </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./login.html">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HISTORIA</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  DEPORTES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./padel.html">PADEL</a></li>
+                  <li><a class="dropdown-item" href="#">TENIS</a></li>
+                  <li><a class="dropdown-item" href="#">BASQUET</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="col-3">
+              <input class="form-control me-2" type="buscar" placeholder="En la web" aria-label="Search">
+              <button class="btn btn-warning" type="submit">BUSCAR</button>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
+      </nav>
+    </header>
+    <main class="border p-4 text-center mb-4">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/ (Personalizado).bmp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/personal (Personalizado).jpg" class="d-block w-100" alt="...">
+          </div>
 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <footer></footer>
 
     <script src="./class/usuario.js"></script>
     <script src="./class/turnos.js"></script>

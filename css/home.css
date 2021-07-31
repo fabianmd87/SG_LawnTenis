@@ -1,13 +1,9 @@
-.h1{
-    background-color: chartreuse;
+.carousel-inner img {
+    height: 500px;
+    width: 100%;
 }
-div.header {
-    color: blue;
-    position: relative;
-}
-.page {
-    background-color: rgb(247, 242, 242);
-}
-.center-v {
-    align-items: center;
+
+.carousel-slide {
+    height: 500px;
+    width: 100%;
 }
